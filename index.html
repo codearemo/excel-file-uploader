@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload</title>
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/upload.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.4/xlsx.full.min.js" type=""></script>
+</head>
+
+<body>
+  <div class="alert-dialog">
+    <p></p>
+  </div>
+  <header>
+    <h1>Upload</h1>
+  </header>
+  <main>
+    <section class="card">
+      <div class="cta-btn-hold">
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+            stroke="#778699" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3" /></svg>
+          <p>Drag and drop a file here</p>
+          <p>Or</p>
+          <form>
+            <input type="file" name="" id="upload-input" accept=".xls,.xlsx,.csv">
+          </form>
+          <button class="primary-btn select-file-btn">Choose file</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./script/upload.js"></script>
+</body>
+
+</html>

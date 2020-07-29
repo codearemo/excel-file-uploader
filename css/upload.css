@@ -1,0 +1,35 @@
+.card {
+  background-color: #fff;
+  box-shadow: 0 1px 2px #e3e3e3;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.cta-btn-hold {
+  background-color: #e3e3e323;
+  height: 80%;
+  width: 90%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #b1b1b1;
+}
+
+.cta-btn-hold p {
+  margin: 8px 0;
+}
+
+#upload-input {
+  display: none;
+}
+
+button {
+  display: inline-block;
+  margin-top: 20px;
+}
