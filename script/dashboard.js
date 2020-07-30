@@ -51,6 +51,6 @@ saveBtn.addEventListener('click', () => {
     })
     .catch(() => {
       loader.style.display = 'none';
-      showAlertDialog('File upload Failed.');
+      showAlertDialog('Error: File upload Failed.');
     })
 });

@@ -58,7 +58,7 @@ uploadInput.addEventListener('change', e => {
       window.open(window.location.origin + '/dashboard.html', '_self');
     } else {
       clearTimeout(timeOut);
-      alertDialogTxt.innerText = 'Headers of file do not match what is expected.';
+      alertDialogTxt.innerText = 'Error: Headers of file do not match what is expected.';
       alertDialog.classList.add('show-alert');
       timeOut = setTimeout(() => {
         alertDialog.classList.remove('show-alert');
