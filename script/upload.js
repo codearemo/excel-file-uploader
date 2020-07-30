@@ -1,6 +1,7 @@
 const uploadInput = document.querySelector('#upload-input');
 const selectFileBtn = document.querySelector('.select-file-btn');
 const form = document.querySelector('form');
+const loader = document.querySelector('.loader-hold');
 const alertDialog = document.querySelector('.alert-dialog');
 const alertDialogTxt = document.querySelector('.alert-dialog p');
 
@@ -27,6 +28,7 @@ const validateHeader = (header) => {
 }
 
 uploadInput.addEventListener('change', e => {
+  loader.style.display = 'flex';
   const selectedFile = e.target.files[0];
   let validHeadersFlag = true;
   let rowObj;
@@ -57,6 +59,7 @@ uploadInput.addEventListener('change', e => {
       localStorage.setItem('table', JSON.stringify(rowObj));
       window.open(window.location.origin + '/dashboard.html', '_self');
     } else {
+      loader.style.display = 'none';
       clearTimeout(timeOut);
       alertDialogTxt.innerText = 'Error: Headers of file do not match what is expected.';
       alertDialog.classList.add('show-alert');
